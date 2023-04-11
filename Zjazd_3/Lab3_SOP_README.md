@@ -28,6 +28,7 @@ d) liczbę podanych argumentów
 e) ID procesu
 
 ```shell
+# kod bash
 # przykładowe uruchomienie skryptu z argumentami
 $ bash zad1.sh a b
 ```
@@ -89,11 +90,13 @@ proc PID: 12345
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami, kiedy jest plik maile.txt
-$ bash zad3.sh maile.txt```
+$ bash zad3.sh maile.txt
+```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób, kiedy jest plik maile.txt
-$ ./zad3.sh maile.txt```
+$ ./zad3.sh maile.txt
+```
 
 ```shell
 # przykład wyniku działania programu, kiedy jest plik maile.txt
@@ -101,15 +104,18 @@ w bieżącym folderze nie ma pliku maile.txt```
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami, kiedy nie ma pliku mailer.txt
-$ bash zad3.sh mailer.txt```
+$ bash zad3.sh mailer.txt
+```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób, kiedy nie ma pliku mailer.txt
-$ ./zad3.sh mailer.txt```
+$ ./zad3.sh mailer.txt
+```
 
 ```shell
 # przykład wyniku działania programu, kiedy nie ma pliku mailer.txt
-w bieżącym folderze nie ma pliku mailer.txt```
+w bieżącym folderze nie ma pliku mailer.txt
+```
 
 >Kod ten używa warunkowego polecenia if, aby sprawdzić, czy plik istnieje w bieżącym katalogu. 
 >Funkcja -e służy do sprawdzenia, czy plik istnieje. 
@@ -127,11 +133,13 @@ w bieżącym folderze nie ma pliku mailer.txt```
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami
-$ bash zad4.sh mailer.txt```
+$ bash zad4.sh mailer.txt
+```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób
-$ ./zad4.sh mailer.txt```
+$ ./zad4.sh mailer.txt
+```
 
 ```shell
 # przykład wyniku działania programu
@@ -140,7 +148,8 @@ c - aktualny katalog
 u - nazwa użytkownika
 h - katalog domowy
 Wybierz opcję: c
-Aktualny katalog: /home/user/Projects```
+Aktualny katalog: /home/user/Projects
+```
 
 ```shell
 Menu wyboru:
@@ -148,7 +157,8 @@ c - aktualny katalog
 u - nazwa użytkownika
 h - katalog domowy
 Wybierz opcję: u
-Nazwa użytkownika: user```
+Nazwa użytkownika: user
+```
 
 ```shell
 Menu wyboru:
@@ -156,7 +166,8 @@ c - aktualny katalog
 u - nazwa użytkownika
 h - katalog domowy
 Wybierz opcję: h
-Katalog domowy: /home/user```
+Katalog domowy: /home/user
+```
 
 ```shell
 Menu wyboru:
@@ -164,8 +175,8 @@ c - aktualny katalog
 u - nazwa użytkownika
 h - katalog domowy
 Wybierz opcję: x
-Błędna opcja wyboru.```
-
+Błędna opcja wyboru.
+```
 
 **warianty:**
 
@@ -177,11 +188,13 @@ Błędna opcja wyboru.```
 
 ```shell
 # przykładowe uruchomienie skryptu
-$ bash zad41.sh```
+$ bash zad41.sh
+```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób
-$ ./zad41.sh```
+$ ./zad41.sh
+```
 
 ```shell
 # przykład wyniku działania programu
@@ -208,19 +221,21 @@ Aktualny czas: 13:30:45
 Wybierz opcję: x
 Błędna opcja wyboru. Wybierz ponownie.
 Wybierz opcję: q
-Do widzenia!```
-
+Do widzenia!
+```
 
 **zad4s.sh** 
 Funkcje menu oraz wybor czytać z własnej biblioteki `funkcje.f`
 
 ```shell
 # przykładowe uruchomienie skryptu
-$ bash zad4s.sh```
+$ bash zad4s.sh
+```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób
-$ ./zad4s.sh```
+$ ./zad4s.sh
+```
 
 ```shell
 # przykład wyniku działania programu
@@ -249,8 +264,8 @@ Wybierz opcję: t
 Aktualny czas: 11:32:45
 
 Wybierz opcję: q
-Do widzenia!```
-
+Do widzenia!
+```
 
 >Zmodyfikowany program zawiera dodatkowe funkcje menu: "d" (wolne miejsce na dysku) i "t" (aktualny czas) oraz opcję "q" (wyjście z programu). 
 >Program wyświetla menu wyboru w nieskończonej pętli while, aż do momentu, gdy użytkownik wybierze opcję "q" i wyjdzie z programu.
