@@ -16,22 +16,27 @@ Aby uruchamiać skrypty w Bashu, należy wykonać następujące kroki:
 Ważne jest, aby upewnić się, że skrypt zawiera poprawną składnię Bash i jest zgodny z wymaganiami systemu operacyjnego, na którym ma być uruchomiony.
 
 ## PARAMETRY
+
 ### Zadania
 
-**1.** Napisz program `zad1.sh` wyświetlający:
-- a) jego nazwę
-- b) kolejno wartości jego argumentów
-- c) wszystkie argumenty
-- d) liczbę podanych argumentów
-- e) ID procesu
+1. Napisz program `zad1.sh` wyświetlający:
+ 
+a) jego nazwę
+b) kolejno wartości jego argumentów
+c) wszystkie argumenty
+d) liczbę podanych argumentów
+e) ID procesu
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami
-$ bash zad1.sh a b```
+$ bash zad1.sh a b
+```
+
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób
-$ ./zad1.sh a b```
+$ ./zad1.sh a b
+```
 
 ```shell
 # przykład wyniku działania programu
@@ -40,18 +45,20 @@ param1: a
 param2: b
 param*: a b
 param#: 2
-proc PID: 12345```
-
+proc PID: 12345
+```
 
 **2.** Napisz program `zad2.sh`, który będzie działał jak **zad1.sh** obsługując dowolną liczbę parametrów.
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami
-$ bash zad2.sh a b c d e f g h i j k```
+$ bash zad2.sh a b c d e f g h i j k
+```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób
-$ ./zad2.sh a b c d e f g h i j k```
+$ ./zad2.sh a b c d e f g h i j k
+```
 
 ```shell
 # przykład wyniku działania programu
@@ -69,7 +76,8 @@ param 10: j
 param 11: k
 param*: a b c d e f g h i j k
 param#: 11
-proc PID: 12345```
+proc PID: 12345
+```
 
 >Skrypt ten wyświetla nazwę programu, a następnie wyświetla pierwsze 9 parametrów (lub mniej, jeśli nie ma ich tyle), a następnie wypisuje pozostałe parametry w pętli. Na końcu wyświetla sumaryczną liczbę parametrów, ich wartości i numer PID procesu, który uruchomił skrypt.
 
