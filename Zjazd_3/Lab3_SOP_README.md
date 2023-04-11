@@ -19,16 +19,17 @@ Ważne jest, aby upewnić się, że skrypt zawiera poprawną składnię Bash i j
 
 ### Zadania
 
+---
+
 1. Napisz program `zad1.sh` wyświetlający:
  
-a) jego nazwę
-b) kolejno wartości jego argumentów
-c) wszystkie argumenty
-d) liczbę podanych argumentów
-e) ID procesu
+- a) jego nazwę
+- b) kolejno wartości jego argumentów
+- c) wszystkie argumenty
+- d) liczbę podanych argumentów
+- e) ID procesu
 
 ```shell
-# kod bash
 # przykładowe uruchomienie skryptu z argumentami
 $ bash zad1.sh a b
 ```
@@ -48,6 +49,7 @@ param*: a b
 param#: 2
 proc PID: 12345
 ```
+---
 
 **2.** Napisz program `zad2.sh`, który będzie działał jak **zad1.sh** obsługując dowolną liczbę parametrów.
 
@@ -86,6 +88,8 @@ proc PID: 12345
 ## PLIKI I FOLDERY 
 ### Zadania
 
+---
+
 **3.** Napisz program `zad3.sh`, który sprawdzi czy w bieżącym katalogu istnieje plik podany jako argument wywołania.
 
 ```shell
@@ -122,6 +126,7 @@ w bieżącym folderze nie ma pliku mailer.txt
 >Jeśli plik istnieje, program wyświetli komunikat "W bieżącym folderze jest plik [nazwa_pliku]", 
 >a jeśli plik nie istnieje, program wyświetli komunikat "W bieżącym folderze nie ma pliku [nazwa_pliku]".
 
+---
 
 **4.** Napisz program `zad4.sh`, który będzie wyświetlał menu wyboru oraz w zależności od wyboru:
 - c – aktualny katalog
@@ -177,8 +182,11 @@ h - katalog domowy
 Wybierz opcję: x
 Błędna opcja wyboru.
 ```
+---
 
-**warianty:**
+**Warianty:**
+
+---
 
 **zad41.sh** 
 >Zastosować własne funkcje menu oraz wybor.
@@ -223,6 +231,7 @@ Błędna opcja wyboru. Wybierz ponownie.
 Wybierz opcję: q
 Do widzenia!
 ```
+---
 
 **zad4s.sh** 
 Funkcje menu oraz wybor czytać z własnej biblioteki `funkcje.f`
