@@ -2,7 +2,7 @@
 ## BASH
 
 ## INFO 
-- uruchamianie skryptów Bash
+### Uruchamianie skryptów Bash
 
 Aby uruchamiać skrypty w Bashu, należy wykonać następujące kroki:
 
@@ -14,25 +14,24 @@ Aby uruchamiać skrypty w Bashu, należy wykonać następujące kroki:
 - Uruchom skrypt, wpisując w terminalu `./skrypt.sh`
 
 Ważne jest, aby upewnić się, że skrypt zawiera poprawną składnię Bash i jest zgodny z wymaganiami systemu operacyjnego, na którym ma być uruchomiony.
----
 
 ## PARAMETRY
-- zadania
+### Zadania
 
 **1.** Napisz program `zad1.sh` wyświetlający:
-(a) jego nazwę
-(b) kolejno wartości jego argumentów
-(c) wszystkie argumenty
-(d) liczbę podanych argumentów
-(e) ID procesu
+- a) jego nazwę
+- b) kolejno wartości jego argumentów
+- c) wszystkie argumenty
+- d) liczbę podanych argumentów
+- e) ID procesu
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami
-$ bash zad1.sh a b
+$ bash zad1.sh a b```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób
-$ ./zad1.sh a b
+$ ./zad1.sh a b```
 
 ```shell
 # przykład wyniku działania programu
@@ -41,18 +40,18 @@ param1: a
 param2: b
 param*: a b
 param#: 2
-proc PID: 12345
----
+proc PID: 12345```
+
 
 **2.** Napisz program `zad2.sh`, który będzie działał jak **zad1.sh** obsługując dowolną liczbę parametrów.
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami
-$ bash zad2.sh a b c d e f g h i j k
+$ bash zad2.sh a b c d e f g h i j k```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób
-$ ./zad2.sh a b c d e f g h i j k
+$ ./zad2.sh a b c d e f g h i j k```
 
 ```shell
 # przykład wyniku działania programu
@@ -70,47 +69,45 @@ param 10: j
 param 11: k
 param*: a b c d e f g h i j k
 param#: 11
-proc PID: 12345
+proc PID: 12345```
 
 >Skrypt ten wyświetla nazwę programu, a następnie wyświetla pierwsze 9 parametrów (lub mniej, jeśli nie ma ich tyle), a następnie wypisuje pozostałe parametry w pętli. Na końcu wyświetla sumaryczną liczbę parametrów, ich wartości i numer PID procesu, który uruchomił skrypt.
 
----
 
 ## PLIKI I FOLDERY 
-- zadania
+### Zadania
 
 **3.** Napisz program `zad3.sh`, który sprawdzi czy w bieżącym katalogu istnieje plik podany jako argument wywołania.
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami, kiedy jest plik maile.txt
-$ bash zad3.sh maile.txt
+$ bash zad3.sh maile.txt```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób, kiedy jest plik maile.txt
-$ ./zad3.sh maile.txt
+$ ./zad3.sh maile.txt```
 
 ```shell
 # przykład wyniku działania programu, kiedy jest plik maile.txt
-w bieżącym folderze nie ma pliku maile.txt
+w bieżącym folderze nie ma pliku maile.txt```
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami, kiedy nie ma pliku mailer.txt
-$ bash zad3.sh mailer.txt
+$ bash zad3.sh mailer.txt```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób, kiedy nie ma pliku mailer.txt
-$ ./zad3.sh mailer.txt
+$ ./zad3.sh mailer.txt```
 
 ```shell
 # przykład wyniku działania programu, kiedy nie ma pliku mailer.txt
-w bieżącym folderze nie ma pliku mailer.txt
+w bieżącym folderze nie ma pliku mailer.txt```
 
 >Kod ten używa warunkowego polecenia if, aby sprawdzić, czy plik istnieje w bieżącym katalogu. 
 >Funkcja -e służy do sprawdzenia, czy plik istnieje. 
 >Jeśli plik istnieje, program wyświetli komunikat "W bieżącym folderze jest plik [nazwa_pliku]", 
 >a jeśli plik nie istnieje, program wyświetli komunikat "W bieżącym folderze nie ma pliku [nazwa_pliku]".
 
----
 
 **4.** Napisz program `zad4.sh`, który będzie wyświetlał menu wyboru oraz w zależności od wyboru:
 - c – aktualny katalog
@@ -122,11 +119,11 @@ w bieżącym folderze nie ma pliku mailer.txt
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami
-$ bash zad4.sh mailer.txt
+$ bash zad4.sh mailer.txt```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób
-$ ./zad4.sh mailer.txt
+$ ./zad4.sh mailer.txt```
 
 ```shell
 # przykład wyniku działania programu
@@ -135,7 +132,7 @@ c - aktualny katalog
 u - nazwa użytkownika
 h - katalog domowy
 Wybierz opcję: c
-Aktualny katalog: /home/user/Projects
+Aktualny katalog: /home/user/Projects```
 
 ```shell
 Menu wyboru:
@@ -143,7 +140,7 @@ c - aktualny katalog
 u - nazwa użytkownika
 h - katalog domowy
 Wybierz opcję: u
-Nazwa użytkownika: user
+Nazwa użytkownika: user```
 
 ```shell
 Menu wyboru:
@@ -151,7 +148,7 @@ c - aktualny katalog
 u - nazwa użytkownika
 h - katalog domowy
 Wybierz opcję: h
-Katalog domowy: /home/user
+Katalog domowy: /home/user```
 
 ```shell
 Menu wyboru:
@@ -159,9 +156,8 @@ c - aktualny katalog
 u - nazwa użytkownika
 h - katalog domowy
 Wybierz opcję: x
-Błędna opcja wyboru.
+Błędna opcja wyboru.```
 
----
 
 **warianty:**
 
@@ -173,11 +169,11 @@ Błędna opcja wyboru.
 
 ```shell
 # przykładowe uruchomienie skryptu
-$ bash zad41.sh
+$ bash zad41.sh```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób
-$ ./zad41.sh
+$ ./zad41.sh```
 
 ```shell
 # przykład wyniku działania programu
@@ -204,20 +200,19 @@ Aktualny czas: 13:30:45
 Wybierz opcję: x
 Błędna opcja wyboru. Wybierz ponownie.
 Wybierz opcję: q
-Do widzenia!
+Do widzenia!```
 
----
 
 **zad4s.sh** 
 Funkcje menu oraz wybor czytać z własnej biblioteki `funkcje.f`
 
 ```shell
 # przykładowe uruchomienie skryptu
-$ bash zad4s.sh
+$ bash zad4s.sh```
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób
-$ ./zad4s.sh
+$ ./zad4s.sh```
 
 ```shell
 # przykład wyniku działania programu
@@ -246,9 +241,9 @@ Wybierz opcję: t
 Aktualny czas: 11:32:45
 
 Wybierz opcję: q
-Do widzenia!
+Do widzenia!```
 
----
+
 >Zmodyfikowany program zawiera dodatkowe funkcje menu: "d" (wolne miejsce na dysku) i "t" (aktualny czas) oraz opcję "q" (wyjście z programu). 
 >Program wyświetla menu wyboru w nieskończonej pętli while, aż do momentu, gdy użytkownik wybierze opcję "q" i wyjdzie z programu.
 >
