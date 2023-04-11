@@ -205,6 +205,7 @@ $ ./zad41.sh
 
 ```shell
 # przykład wyniku działania programu
+
 Menu wyboru:
 c - aktualny katalog
 u - nazwa użytkownika
@@ -212,21 +213,28 @@ h - katalog domowy
 d - wolne miejsce na dysku
 t - aktualny czas
 q - wyjście z programu
+
 Wybierz opcję: c
 Aktualny katalog: /home/user/Projects
+
 Wybierz opcję: u
 Nazwa użytkownika: user
+
 Wybierz opcję: h
 Katalog domowy: /home/user
+
 Wybierz opcję: d
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda1        20G  7.9G   12G  41% /
 tmpfs           1.6G   96K  1.6G   1% /dev/shm
 /dev/sdb1       459G  135G  301G  31% /home
+
 Wybierz opcję: t
 Aktualny czas: 13:30:45
+
 Wybierz opcję: x
 Błędna opcja wyboru. Wybierz ponownie.
+
 Wybierz opcję: q
 Do widzenia!
 ```
@@ -247,6 +255,7 @@ $ ./zad4s.sh
 
 ```shell
 # przykład wyniku działania programu
+
 Menu wyboru:
 c - aktualny katalog
 u - nazwa użytkownika
@@ -256,7 +265,8 @@ t - aktualny czas
 q - wyjście z programu
 
 Wybierz opcję: c
-Aktualny katalog: /home/user
+Aktualny katalog: 
+/home/user
 
 Wybierz opcję: d
 System plików    rozm. użyte dost. %uż. zamont. na
@@ -269,7 +279,8 @@ tmpfs            7,9G     0  7,9G   0% /sys/fs/cgroup
 tmpfs            1,6G   24K  1,6G   1% /run/user/1000
 
 Wybierz opcję: t
-Aktualny czas: 11:32:45
+Aktualny czas:
+Tue Apr 11 22:17:40 CEST 2023
 
 Wybierz opcję: q
 Do widzenia!
