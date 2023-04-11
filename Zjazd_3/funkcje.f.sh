@@ -10,7 +10,7 @@ function menu {
   echo "d - wolne miejsce na dysku"
   echo "t - aktualny czas"
   echo "q - wyjście z programu"
-  
+
   # Pobieranie wyboru użytkownika
   read -p "Wybierz opcję: " wybor
   echo $wybor

@@ -1,23 +1,15 @@
 #!/bin/bash
 
-# Importowanie funkcji z pliku funkcje.f
+# Ładowanie funkcji z pliku funkcje.f
 source funkcje.f
 
-# Wyświetlanie menu wyboru
-echo "Menu wyboru:"
-echo "c - aktualny katalog"
-echo "u - nazwa użytkownika"
-echo "h - katalog domowy"
-echo "d - wolne miejsce na dysku"
-echo "t - aktualny czas"
-echo "q - wyjście z programu"
-
+# Pętla while, która wywołuje funkcję menu i wykonuje odpowiednie polecenie w zależności od wyboru użytkownika
 while true; do
-  # Pobieranie wyboru użytkownika z funkcji menu z pliku funkcje.f
-  opcja=$(menu)
+  # Wyświetlenie menu wyboru i pobranie wyboru użytkownika
+  wybor=$(menu)
 
   # Instrukcja case, która w zależności od wyboru użytkownika wykonuje odpowiednie polecenie
-  case $opcja in
+  case $wybor in
     c) # Jeśli wybór to "c", wyświetl aktualny katalog
       echo "Aktualny katalog: $(pwd)"
       ;;
@@ -28,7 +20,7 @@ while true; do
       echo "Katalog domowy: $HOME"
       ;;
     d) # Jeśli wybór to "d", wyświetl wolne miejsce na dysku
-      df -h
+      wolne_miejsce
       ;;
     t) # Jeśli wybór to "t", wyświetl aktualny czas
       echo "Aktualny czas: $(date +%T)"
