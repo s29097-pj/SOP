@@ -3,34 +3,30 @@
 # Ładowanie funkcji z pliku funkcje.f
 source funkcje.f
 
-# Pętla while, która wywołuje funkcję menu i wykonuje odpowiednie polecenie w zależności od wyboru użytkownika
+# Pętla nieskończona wykorzystywana do wyświetlania menu i pobierania wyboru użytkownika
 while true; do
-  # Wyświetlenie menu wyboru i pobranie wyboru użytkownika
-  wybor=$(menu)
 
-  # Instrukcja case, która w zależności od wyboru użytkownika wykonuje odpowiednie polecenie
-  case $wybor in
-    c) # Jeśli wybór to "c", wyświetl aktualny katalog
-      echo "Aktualny katalog: $(pwd)"
-      ;;
-    u) # Jeśli wybór to "u", wyświetl nazwę użytkownika
-      echo "Nazwa użytkownika: $(whoami)"
-      ;;
-    h) # Jeśli wybór to "h", wyświetl katalog domowy
-      echo "Katalog domowy: $HOME"
-      ;;
-    d) # Jeśli wybór to "d", wyświetl wolne miejsce na dysku
-      wolne_miejsce
-      ;;
-    t) # Jeśli wybór to "t", wyświetl aktualny czas
-      echo "Aktualny czas: $(date +%T)"
-      ;;
-    q) # Jeśli wybór to "q", wyjdź z programu
-      echo "Do widzenia!"
-      exit 0
-      ;;
-    *) # Jeśli wybór jest inny niż "c", "u", "h", "d", "t" lub "q", wyświetl informację o błędzie
-      echo "Błędna opcja wyboru. Wybierz ponownie."
-      ;;
-  esac
+  # Wyświetlenie menu
+  menu
+  option=$(wybor)
+  
+  # Pętla do wykonania odpowiedniej akcji w zależności od wyboru użytkownika
+  
+  if [ "$option" == "c" ]; then
+	echo "Aktualny katalog: $(pwd)"
+  elif [ "$option" == "u" ]; then
+	echo "Nazwa użytkownika: $(whoami)"
+  elif [ "$option" == "h" ]; then
+    echo "Katalog domowy: $HOME"
+  elif [ "$option" == "d" ]; then
+	echo "Wolne miejsce na dysku:" 
+	df -h # Wolne miejsce na dysku
+  elif [ "$option" == "t" ]; then
+	echo "Aktualny czas: $(date +%T)"
+  elif [ "$option" == "q" ]; then
+    echo "Do widzenia!"
+    break # Wyjście z programu
+  else
+    echo "Błędna opcja wyboru. Wybierz ponownie."
+  fi
 done
