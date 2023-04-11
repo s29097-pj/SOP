@@ -1,8 +1,8 @@
-# LABORATORIUM 3 SOP
-## BASH
+<h2 style="color:red;"># LABORATORIUM 3 SOP</h2>
+<h2 style="color:red;">## BASH</h2>
 
-## INFO 
-### Uruchamianie skryptów Bash
+<h3 style="color:green;">## INFO</h3>
+<h3 style="color:green;">### Uruchamianie skryptów Bash</h3>
 
 Aby uruchamiać skrypty w Bashu, należy wykonać następujące kroki:
 
@@ -15,13 +15,13 @@ Aby uruchamiać skrypty w Bashu, należy wykonać następujące kroki:
 
 Ważne jest, aby upewnić się, że skrypt zawiera poprawną składnię Bash i jest zgodny z wymaganiami systemu operacyjnego, na którym ma być uruchomiony.
 
-## PARAMETRY
+<h3 style="color:green;">## PARAMETRY</h3>
 
-### Zadania
+<h3 style="color:green;">### Zadania</h3>
 
 ---
 
-1. Napisz program `zad1.sh` wyświetlający:
+<h3 style="color:green;">**1.** Napisz program `zad1.sh` wyświetlający:</h3>
  
 - a) jego nazwę
 - b) kolejno wartości jego argumentów
@@ -33,7 +33,6 @@ Ważne jest, aby upewnić się, że skrypt zawiera poprawną składnię Bash i j
 # przykładowe uruchomienie skryptu z argumentami
 $ bash zad1.sh a b
 ```
-
 
 ```shell
 # alternatywnie można też uruchomić w ten sposób
@@ -51,7 +50,7 @@ proc PID: 12345
 ```
 ---
 
-**2.** Napisz program `zad2.sh`, który będzie działał jak **zad1.sh** obsługując dowolną liczbę parametrów.
+<h3 style="color:green;">**2.** Napisz program `zad2.sh`, który będzie działał jak **zad1.sh** obsługując dowolną liczbę parametrów.</h3>
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami
@@ -85,12 +84,12 @@ proc PID: 12345
 >Skrypt ten wyświetla nazwę programu, a następnie wyświetla pierwsze 9 parametrów (lub mniej, jeśli nie ma ich tyle), a następnie wypisuje pozostałe parametry w pętli. Na końcu wyświetla sumaryczną liczbę parametrów, ich wartości i numer PID procesu, który uruchomił skrypt.
 
 
-## PLIKI I FOLDERY 
-### Zadania
+<h3 style="color:green;">## PLIKI I FOLDERY</h3>
+<h3 style="color:green;">### Zadania</h3>
 
 ---
 
-**3.** Napisz program `zad3.sh`, który sprawdzi czy w bieżącym katalogu istnieje plik podany jako argument wywołania.
+<h3 style="color:green;">**3.** Napisz program `zad3.sh`, który sprawdzi czy w bieżącym katalogu istnieje plik podany jako argument wywołania.</h3>
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami, kiedy jest plik maile.txt
@@ -104,7 +103,8 @@ $ ./zad3.sh maile.txt
 
 ```shell
 # przykład wyniku działania programu, kiedy jest plik maile.txt
-w bieżącym folderze nie ma pliku maile.txt```
+w bieżącym folderze nie ma pliku maile.txt
+```
 
 ```shell
 # przykładowe uruchomienie skryptu z argumentami, kiedy nie ma pliku mailer.txt
@@ -128,7 +128,7 @@ w bieżącym folderze nie ma pliku mailer.txt
 
 ---
 
-**4.** Napisz program `zad4.sh`, który będzie wyświetlał menu wyboru oraz w zależności od wyboru:
+<h3 style="color:green;">**4.** Napisz program `zad4.sh`, który będzie wyświetlał menu wyboru oraz w zależności od wyboru:</h3>
 - c – aktualny katalog
 - u - nazwę użytkownika
 - h - katalog domowy
@@ -187,9 +187,8 @@ Błędna opcja wyboru.
 **Warianty:**
 
 ---
-
-**zad41.sh** 
->Zastosować własne funkcje menu oraz wybor.
+<h3 style="color:green;">**zad41.sh**</h3>
+Zastosować własne funkcje menu oraz wybor.
 
 >Kod ten wyświetla menu wyboru, pobiera wybór użytkownika i używa instrukcji case do wyświetlenia odpowiedniej informacji w zależności od wyboru. 
 >Jeśli użytkownik wybierze inną opcję, niż 'c', 'u', lub 'h', program wyświetli informację o błędzie.
@@ -233,7 +232,7 @@ Do widzenia!
 ```
 ---
 
-**zad4s.sh** 
+<h3 style="color:green;">**zad4s.sh**</h3>
 Funkcje menu oraz wybor czytać z własnej biblioteki `funkcje.f`
 
 ```shell
