@@ -19,8 +19,6 @@ Ważne jest, aby upewnić się, że skrypt zawiera poprawną składnię Bash i j
 
 ### Zadania
 
----
-
 **1.** Napisz program `zad1.sh` wyświetlający:
  
 - a) jego nazwę
