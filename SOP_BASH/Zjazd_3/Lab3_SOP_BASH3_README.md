@@ -27,18 +27,18 @@ Ważne jest, aby upewnić się, że skrypt zawiera poprawną składnię Bash i j
 - d) liczbę podanych argumentów
 - e) ID procesu
 
+>przykładowe uruchomienie skryptu z argumentami
 ```shell
-# przykładowe uruchomienie skryptu z argumentami
 $ bash zad1.sh a b
 ```
 
+>alternatywnie można też uruchomić w ten sposób
 ```shell
-# alternatywnie można też uruchomić w ten sposób
 $ ./zad1.sh a b
 ```
 
+>przykład wyniku działania programu
 ```shell
-# przykład wyniku działania programu
 program nazywa się: zad1.sh
 param1: a
 param2: b
@@ -50,18 +50,18 @@ proc PID: 12345
 
 **2.** Napisz program `zad2.sh`, który będzie działał jak **zad1.sh** obsługując dowolną liczbę parametrów.
 
+>przykładowe uruchomienie skryptu z argumentami
 ```shell
-# przykładowe uruchomienie skryptu z argumentami
 $ bash zad2.sh a b c d e f g h i j k
 ```
 
+>alternatywnie można też uruchomić w ten sposób
 ```shell
-# alternatywnie można też uruchomić w ten sposób
 $ ./zad2.sh a b c d e f g h i j k
 ```
 
+>przykład wyniku działania programu
 ```shell
-# przykład wyniku działania programu
 program nazywa się: zad2.sh a b c d e f g h i j k
 param 1: a
 param 2: b
@@ -89,33 +89,33 @@ proc PID: 12345
 
 **3.** Napisz program `zad3.sh`, który sprawdzi czy w bieżącym katalogu istnieje plik podany jako argument wywołania.
 
+>przykładowe uruchomienie skryptu z argumentami, kiedy jest plik maile.txt
 ```shell
-# przykładowe uruchomienie skryptu z argumentami, kiedy jest plik maile.txt
 $ bash zad3.sh maile.txt
 ```
 
+>alternatywnie można też uruchomić w ten sposób, kiedy jest plik maile.txt
 ```shell
-# alternatywnie można też uruchomić w ten sposób, kiedy jest plik maile.txt
 $ ./zad3.sh maile.txt
 ```
 
+>przykład wyniku działania programu, kiedy jest plik maile.txt
 ```shell
-# przykład wyniku działania programu, kiedy jest plik maile.txt
 w bieżącym folderze nie ma pliku maile.txt
 ```
 
+>przykładowe uruchomienie skryptu z argumentami, kiedy nie ma pliku mailer.txt
 ```shell
-# przykładowe uruchomienie skryptu z argumentami, kiedy nie ma pliku mailer.txt
 $ bash zad3.sh mailer.txt
 ```
 
+>alternatywnie można też uruchomić w ten sposób, kiedy nie ma pliku mailer.txt
 ```shell
-# alternatywnie można też uruchomić w ten sposób, kiedy nie ma pliku mailer.txt
 $ ./zad3.sh mailer.txt
 ```
 
+>przykład wyniku działania programu, kiedy nie ma pliku mailer.txt
 ```shell
-# przykład wyniku działania programu, kiedy nie ma pliku mailer.txt
 w bieżącym folderze nie ma pliku mailer.txt
 ```
 
@@ -134,18 +134,18 @@ w bieżącym folderze nie ma pliku mailer.txt
 >Kod ten wyświetla menu wyboru, pobiera wybór użytkownika i używa instrukcji case do wyświetlenia odpowiedniej informacji w zależności od wyboru. 
 >Jeśli użytkownik wybierze inną opcję, niż 'c', 'u', lub 'h', program wyświetli informację o błędzie.
 
+>przykładowe uruchomienie skryptu z argumentami
 ```shell
-# przykładowe uruchomienie skryptu z argumentami
 $ bash zad4.sh mailer.txt
 ```
 
+>alternatywnie można też uruchomić w ten sposób
 ```shell
-# alternatywnie można też uruchomić w ten sposób
 $ ./zad4.sh mailer.txt
 ```
 
+>przykład wyniku działania programu
 ```shell
-# przykład wyniku działania programu
 Menu wyboru:
 c - aktualny katalog
 u - nazwa użytkownika
@@ -191,19 +191,18 @@ Zastosować własne funkcje menu oraz wybor.
 >Kod ten wyświetla menu wyboru, pobiera wybór użytkownika i używa instrukcji case do wyświetlenia odpowiedniej informacji w zależności od wyboru. 
 >Jeśli użytkownik wybierze inną opcję, niż 'c', 'u', lub 'h', program wyświetli informację o błędzie.
 
+>przykładowe uruchomienie skryptu
 ```shell
-# przykładowe uruchomienie skryptu
 $ bash zad41.sh
 ```
 
+>alternatywnie można też uruchomić w ten sposób
 ```shell
-# alternatywnie można też uruchomić w ten sposób
 $ ./zad41.sh
 ```
 
+>przykład wyniku działania programu
 ```shell
-# przykład wyniku działania programu
-
 Menu wyboru:
 c - aktualny katalog
 u - nazwa użytkownika
@@ -241,19 +240,18 @@ Do widzenia!
 **zad4s.sh**
 Funkcje menu oraz wybor czytać z własnej biblioteki `funkcje.f`
 
+>przykładowe uruchomienie skryptu
 ```shell
-# przykładowe uruchomienie skryptu
 $ bash zad4s.sh
 ```
 
+>alternatywnie można też uruchomić w ten sposób
 ```shell
-# alternatywnie można też uruchomić w ten sposób
 $ ./zad4s.sh
 ```
 
+>przykład wyniku działania programu
 ```shell
-# przykład wyniku działania programu
-
 Menu wyboru:
 c - aktualny katalog
 u - nazwa użytkownika
