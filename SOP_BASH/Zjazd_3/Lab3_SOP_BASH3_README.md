@@ -29,12 +29,12 @@ Ważne jest, aby upewnić się, że skrypt zawiera poprawną składnię Bash i j
 
 >przykładowe uruchomienie skryptu z argumentami
 ```shell
-$ bash zad1.sh a b
+bash zad1.sh a b
 ```
 
 >alternatywnie można też uruchomić w ten sposób
 ```shell
-$ ./zad1.sh a b
+./zad1.sh a b
 ```
 
 >przykład wyniku działania programu
@@ -52,12 +52,12 @@ proc PID: 12345
 
 >przykładowe uruchomienie skryptu z argumentami
 ```shell
-$ bash zad2.sh a b c d e f g h i j k
+bash zad2.sh a b c d e f g h i j k
 ```
 
 >alternatywnie można też uruchomić w ten sposób
 ```shell
-$ ./zad2.sh a b c d e f g h i j k
+./zad2.sh a b c d e f g h i j k
 ```
 
 >przykład wyniku działania programu
@@ -91,12 +91,12 @@ proc PID: 12345
 
 >przykładowe uruchomienie skryptu z argumentami, kiedy jest plik maile.txt
 ```shell
-$ bash zad3.sh maile.txt
+bash zad3.sh maile.txt
 ```
 
 >alternatywnie można też uruchomić w ten sposób, kiedy jest plik maile.txt
 ```shell
-$ ./zad3.sh maile.txt
+./zad3.sh maile.txt
 ```
 
 >przykład wyniku działania programu, kiedy jest plik maile.txt
@@ -106,12 +106,12 @@ w bieżącym folderze nie ma pliku maile.txt
 
 >przykładowe uruchomienie skryptu z argumentami, kiedy nie ma pliku mailer.txt
 ```shell
-$ bash zad3.sh mailer.txt
+bash zad3.sh mailer.txt
 ```
 
 >alternatywnie można też uruchomić w ten sposób, kiedy nie ma pliku mailer.txt
 ```shell
-$ ./zad3.sh mailer.txt
+./zad3.sh mailer.txt
 ```
 
 >przykład wyniku działania programu, kiedy nie ma pliku mailer.txt
@@ -136,12 +136,12 @@ w bieżącym folderze nie ma pliku mailer.txt
 
 >przykładowe uruchomienie skryptu z argumentami
 ```shell
-$ bash zad4.sh mailer.txt
+bash zad4.sh mailer.txt
 ```
 
 >alternatywnie można też uruchomić w ten sposób
 ```shell
-$ ./zad4.sh mailer.txt
+./zad4.sh mailer.txt
 ```
 
 >przykład wyniku działania programu
@@ -193,12 +193,12 @@ Zastosować własne funkcje menu oraz wybor.
 
 >przykładowe uruchomienie skryptu
 ```shell
-$ bash zad41.sh
+bash zad41.sh
 ```
 
 >alternatywnie można też uruchomić w ten sposób
 ```shell
-$ ./zad41.sh
+./zad41.sh
 ```
 
 >przykład wyniku działania programu
@@ -242,12 +242,12 @@ Funkcje menu oraz wybor czytać z własnej biblioteki `funkcje.f`
 
 >przykładowe uruchomienie skryptu
 ```shell
-$ bash zad4s.sh
+bash zad4s.sh
 ```
 
 >alternatywnie można też uruchomić w ten sposób
 ```shell
-$ ./zad4s.sh
+./zad4s.sh
 ```
 
 >przykład wyniku działania programu
