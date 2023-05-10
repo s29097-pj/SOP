@@ -15,20 +15,22 @@ int main () {
     printf("PPID: %d\n", (int) getppid ()); // wypisuje ID procesu nadrzędnego
     return 0; // zwraca wartość 0 jako kod wyjścia programu
 }
+```
 
 Skompilować i uruchomić zadanie1:
 
 ```c
 gcc -std=c99 zadanie1.c -o zadanie1
+```
 
 >przykładowy output:
 
 ```bash
 PID: 4905
 PPID: 4874
+```
 
-
-(std=c99 - standard języka C ISO99 https://gcc.gnu.org/c99status.html)
+>(std=c99 - standard języka C ISO99 https://gcc.gnu.org/c99status.html)
 
 > Opis działania programu:
 
@@ -61,6 +63,7 @@ int main () {
 
     return 0; // zakończenie programu
 }
+```
 
 Aby skompilować i uruchomić zadanie2 w systemach Linux lub macOS, należy wykonać następujące kroki:
 
@@ -70,11 +73,13 @@ Aby skompilować i uruchomić zadanie2 w systemach Linux lub macOS, należy wyko
 
 ```bash
 gcc -o zadanie2 zadanie2.c
+```
 
 - Uruchom plik wykonywalny zadanie2, wpisując w terminalu następującą komendę i naciskając Enter:
 
 ```bash
 ./zadanie2
+```
 
 >przykładowy output:
 
@@ -82,6 +87,7 @@ gcc -o zadanie2 zadanie2.c
 PID glownego programu: 4926
 to jest proces macierzysty, a jego PID to: 4926
 PID procesu potomnego: 4927
+```
 
 > Opis działania programu:
 
@@ -110,6 +116,7 @@ int main()
 
     return 0;
 }
+```
 
 Aby skompilować i uruchomić ten program, należy wykonać następujące kroki:
 - Zapisz powyższy kod jako plik o nazwie `zadanie3.c`.
@@ -125,12 +132,14 @@ Po wykonaniu powyższych kroków powinien zostać wyświetlony bieżący katalog
 ```bash
 Jesteś w katalogu:
 /home/informatyk/Dokumenty/SOP/SOP_C/Zjazd_5
+```
 
 ## Zadanie 4
 ## Program tworzący proces potomny i oczekujący na jego zakończenie
 
 W tym zadaniu należy utworzyć plik `zadanie4.c`, który tworzy nowy proces potomny i czeka na jego zakończenie.
 
+```c
 #include <sys/wait.h>
 #include <sys/types.h>
 #include <stdio.h>
@@ -168,7 +177,7 @@ int main()
 
     return 0;
 }
-
+```
 
 > Opis działania programu:
 
@@ -185,7 +194,7 @@ Czekam na zakończenie procesu potomnego...
 Czekam na zakończenie procesu potomnego...
 Proces potomny (PID: 5018) kończy działanie...
 Proces macierzysty: proces potomny (PID: 5018) zakończył działanie, zwracając kod 0
-
+```
 
 ## Zadanie 5
 ## Uruchomienie programu ls za pomocą funkcji fork i execl
@@ -220,6 +229,7 @@ int main(int argc, char* argv[])
     }
     return 0;
 }
+```
 
 > Opis działania programu:
 
@@ -246,3 +256,4 @@ drwxrwxr-x 4 informatyk informatyk   4096 maj 10 10:00 ..
 -rwxrwxr-x 1 informatyk informatyk  16168 maj 10 14:09 zadanie5
 -rw-rw-r-- 1 informatyk informatyk    757 maj 10 13:38 zadanie5.c
 [5073]: ls -l -a zakonczony
+```
