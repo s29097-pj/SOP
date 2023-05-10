@@ -43,6 +43,7 @@ int main ()
     // Zwraca wartość zero, aby oznaczyć poprawne zakończenie programu
     return 0;
 }
+```
 
 Warto zwrócić uwagę, że przy kolejnych uruchomieniach tego programu PID się zmienia, a PPID zostaje takie samo (jeśli uruchamiamy proces z tego samego shella, który jest "parent process" dla uruchamianego w nim procesu).
 
@@ -101,6 +102,7 @@ int main() {
     // Zwraca wartość zero, aby oznaczyć poprawne zakończenie programu
     return 0;
 }
+```
 
 # TWORZENIE PROCESÓW
 
@@ -144,6 +146,7 @@ int main() {
     // Zwraca wartość zero, aby oznaczyć poprawne zakończenie programu
     return 0;
 }
+```
 
 `fork()` nie gwarantuje, że proces potomny będzie żył krócej niż macierzysty. Jeśli dojdzie do sytuacji, że proces macierzysty zakończy się przed potomnym, ten drugi zostanie przygarnięty przez `init`.
 
@@ -186,6 +189,7 @@ int main() {
   // Zwraca wartość zero, aby oznaczyć poprawne zakończenie programu
   return 0;
 }
+```
 
 ## KOŃCZENIE PROCESÓW
 
@@ -243,5 +247,6 @@ int main() {
     printf("Potomek (PID: %d) zakończył działanie zwracając %d\n", pid, exit_status);
     return 0;
 }
+```
 
 W przypadku, jeśli proces potomny zakończy się bez wywołania funkcji wait(), przechodzi w stan zawieszenia i staje się on procesem zombie.
