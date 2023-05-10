@@ -70,9 +70,9 @@ Nie podano żadnych parametrów.
 ### **Zadanie 2**
 
 Napisz skrypt, który sprawdzi, czy istnieje plik SOP_display.sh w bieżącym katalogu.
-[A] Jeśli taki istnieje, to niech go wykona.
-[B] Jeśli nie istnieje, to niech sprawdzi, czy podano argument i wykona plik o nazwie takiej jak wartość argumentu (parametru) skryptu.
-[C] Jeśli żadne z powyższych nie nastąpiło, to niech wyświetli komunikat o błędzie.
+- [A] Jeśli taki istnieje, to niech go wykona.
+- [B] Jeśli nie istnieje, to niech sprawdzi, czy podano argument i wykona plik o nazwie takiej jak wartość argumentu (parametru) skryptu.
+- [C] Jeśli żadne z powyższych nie nastąpiło, to niech wyświetli komunikat o błędzie.
 
 >Output przy opcji [C]
 ```bash
@@ -98,8 +98,8 @@ Napisz skrypt, który sprawdzi, czy w bieżącym katalogu jest więcej niż 5. p
 Jeśli tak, to wypisze odpowiedni komunikat z informacją, że tak jest.
 
 Podpowiedź:
-[A] ls - wywietla listę pików;
-[B] wc - word count - zlicza znaki, słowa i linie.
+- [A] ls - wywietla listę pików;
+- [B] wc - word count - zlicza znaki, słowa i linie.
 
 >Output przy liczbie plików > 5
 ```bash
